@@ -1,6 +1,6 @@
 name: Deploy VitePress Docs
 
-# 只在 main 分支 docs 文件夹改动时触发
+# 触发条件：main 分支 docs 目录或工作流文件自身改动
 on:
   push:
     branches:
@@ -12,33 +12,43 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    # 重要：授予推送代码的权限
     permissions:
-      contents: write  # 需要写权限才能推送到 gh-pages 分支
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 强制 Node 24，避免警告
-
+      contents: write
+      
     steps:
-      # 拉取仓库代码
+      # 1. 拉取代码
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史，以便 VitePress 显示最后更新时间
 
-      # 安装 Node.js 24
+      # 2. 设置 Node.js 环境 (使用稳定的 v22)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'   # 自动缓存 node_modules，加速构建
+          cache: 'npm'
 
+      # 3. 配置 Git 机器人身份 (解决 Author identity unknown 报错)
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 安装依赖
+      # 4. 安装依赖
       - name: Install dependencies
         run: npm ci
 
-      # 构建并部署 VitePress
-      - name: Build and Deploy Docs
-        run: npm run docs:deploy
+      # 5. 构建项目
+      - name: Build Docs
+        run: npm run docs:build
+
+      # 6. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist # VitePress 默认构建输出目录
+          force_orphan: true # 如果你想让 gh-pages 分支保持干净，设为 true
