@@ -18,13 +18,13 @@ jobs:
     steps:
       # 拉取仓库代码
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 安装 Node.js 24
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
           cache: 'npm'   # 自动缓存 node_modules，加速构建
 
       # 安装依赖
