@@ -1,0 +1,1 @@
+import{_ as o,o as c,c as r,ai as t}from"./chunks/framework.D4BTmSeM.js";const D=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ch1/ch1_2.md","filePath":"ch1/ch1_2.md"}'),l={name:"ch1/ch1_2.md"};function k(p,e,a,i,n,s){return c(),r("div",null,[...e[0]||(e[0]=[t("",14)])])}const d=o(l,[["render",k]]);export{D as __pageData,d as default};
