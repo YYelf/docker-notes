@@ -1,6 +1,21 @@
 # Docker 教程：从入门到掌握
 
+## 项目来源说明
+
+:::warning 本项目说明
+本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。  
+为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
+:::
+
+  
+在线文档访问地址：  
+[https://yyelf.github.io/docker-notes/](https://yyelf.github.io/docker-notes/)
+
 ![Docker](./docs/images/Docker.png)
+
+
+
+---
 
 > **「Docker」 基础知识讲解和使用教程。**
 
@@ -24,33 +39,35 @@
 
 ## 章节目录
 
-- 第 1 章  [Docker 介绍](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch1/ch1.md)
-    - [1.1 Docker 的特点与架构](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch1/ch1_1.md)
-    - [1.2 Docker 核心概念](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch1/ch1_2.md)
-    - [1.3 Docker 和虚拟机对比](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch1/ch1_3.md)
-- 第 2 章  [Docker 安装](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch2/ch2.md)
-    - [2.1 CentOS Docker 安装](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch2/ch2_1.md)
-    - [2.2 macOS Docker 安装](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch2/ch2_2.md)
-    - [2.3 Windows Docker 安装](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch2/ch2_3.md)
-- 第 3 章  [Docker 使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3.md)
-    - [3.1 配置镜像源地址](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3_1.md)
-    - [3.2 Docker 服务使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3_2.md)
-    - [3.3 Docker 镜像使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3_3.md)
-    - [3.4 Docker 容器使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3_4.md)
-    - [3.5 私有镜像仓库](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch3/ch3_5.md)
-- 第 4 章  [Docker Dockerfile](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch4/ch4.md)
-    - [4.1 Dockerfile 简单使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch4/ch4_1.md)
-    - [4.2 Dockerfile 常用指令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch4/ch4_2.md)
-    - [4.3 Dockerfile 实际使用](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch4/ch4_3.md)
-- 第 5 章  [Docker Compose](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch5/ch5.md)
-    - [5.1 Docker Compose 安装](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch5/ch5_1.md)
-    - [5.2 Docker Compose 文件结构](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch5/ch5_2.md)
-    - [2.3 Docker Compose 常用操作命令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch5/ch5_3.md)
-- 第 6 章  [Docker 常用命令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch6/ch6.md)
-    - [6.1 Docker 服务命令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch6/ch6_1.md)
-    - [6.2 Docker 镜像命令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch6/ch6_2.md)
-    - [6.3 Docker 容器命令](https://github.com/datawhalechina/docker-notes/tree/main/docs/ch6/ch6_3.md)
-- [参考资料](https://github.com/datawhalechina/docker-notes/tree/main/docs/others/reference.md)
+> 在线阅读：[https://yyelf.github.io/docker-notes/](https://yyelf.github.io/docker-notes/)
+
+- 第 1 章  [Docker 介绍](/docs/ch1/ch1.md)
+    - [1.1 Docker 的特点与架构](/docs/ch1/ch1_1.md)
+    - [1.2 Docker 核心概念](/docs/ch1/ch1_2.md)
+    - [1.3 Docker 和虚拟机对比](/docs/ch1/ch1_3.md)
+- 第 2 章  [Docker 安装](/docs/ch2/ch2.md)
+    - [2.1 CentOS Docker 安装](/docs/ch2/ch2_1.md)
+    - [2.2 macOS Docker 安装](/docs/ch2/ch2_2.md)
+    - [2.3 Windows Docker 安装](/docs/ch2/ch2_3.md)
+- 第 3 章  [Docker 使用](/docs/ch3/ch3.md)
+    - [3.1 配置镜像源地址](/docs/ch3/ch3_1.md)
+    - [3.2 Docker 服务使用](/docs/ch3/ch3_2.md)
+    - [3.3 Docker 镜像使用](/docs/ch3/ch3_3.md)
+    - [3.4 Docker 容器使用](/docs/ch3/ch3_4.md)
+    - [3.5 私有镜像仓库](/docs/ch3/ch3_5.md)
+- 第 4 章  [Docker Dockerfile](/docs/ch4/ch4.md)
+    - [4.1 Dockerfile 简单使用](/docs/ch4/ch4_1.md)
+    - [4.2 Dockerfile 常用指令](/docs/ch4/ch4_2.md)
+    - [4.3 Dockerfile 实际使用](/docs/ch4/ch4_3.md)
+- 第 5 章  [Docker Compose](/docs/ch5/ch5.md)
+    - [5.1 Docker Compose 安装](/docs/ch5/ch5_1.md)
+    - [5.2 Docker Compose 文件结构](/docs/ch5/ch5_2.md)
+    - [2.3 Docker Compose 常用操作命令](/docs/ch5/ch5_3.md)
+- 第 6 章  [Docker 常用命令](/docs/ch6/ch6.md)
+    - [6.1 Docker 服务命令](/docs/ch6/ch6_1.md)
+    - [6.2 Docker 镜像命令](/docs/ch6/ch6_2.md)
+    - [6.3 Docker 容器命令](/docs/ch6/ch6_3.md)
+- [参考资料](/docs/others/reference.md)
 
 ## 贡献者名单
 

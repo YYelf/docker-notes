@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as e,ai as l}from"./chunks/framework.CQB9ksOm.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ch3/ch3_3.md","filePath":"ch3/ch3_3.md"}'),n={name:"ch3/ch3_3.md"};function h(k,s,t,p,F,d){return a(),e("div",null,[...s[0]||(s[0]=[l("",57)])])}const c=i(n,[["render",h]]);export{g as __pageData,c as default};
