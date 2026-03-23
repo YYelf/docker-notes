@@ -1,6 +1,15 @@
 # Docker 教程：从入门到掌握
 
-> 项目来源：https://github.com/datawhalechina/docker-notes
+## 项目来源说明
+
+> [!NOTE] 
+>
+> 本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
+
+
+在线阅读：  [https://yyelf.github.io/docker-notes/](https://yyelf.github.io/docker-notes/)
+
+---
 
 ![Docker](./images/Docker.png)
 

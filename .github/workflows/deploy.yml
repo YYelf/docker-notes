@@ -1,36 +1,8 @@
-name: Deploy VitePress Docs
+- name: Build Docs
+  run: npm run docs:build
 
-# 只在 main 分支 docs 文件夹改动时触发
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 强制 Node 24，避免警告
-
-    steps:
-      # 拉取仓库代码
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # 安装 Node.js 24
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm'   # 自动缓存 node_modules，加速构建
-
-      # 安装依赖
-      - name: Install dependencies
-        run: npm ci
-
-      # 构建并部署 VitePress
-      - name: Build and Deploy Docs
-        run: npm run docs:deploy
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: docs/.vitepress/dist
