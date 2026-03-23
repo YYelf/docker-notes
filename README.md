@@ -2,19 +2,16 @@
 
 ## 项目来源说明
 
-> [!info] 本项目说明
-> 本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。  
-> 为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
-
-  
-在线文档访问地址：  
-[https://yyelf.github.io/docker-notes/](https://yyelf.github.io/docker-notes/)
-
-![Docker](./docs/images/Docker.png)
+> [!NOTE] 
+>
+> 本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
 
 
+在线阅读：  [https://yyelf.github.io/docker-notes/](https://yyelf.github.io/docker-notes/)
 
 ---
+
+![Docker](./docs/images/Docker.png)
 
 > **「Docker」 基础知识讲解和使用教程。**
 
