@@ -1,1 +1,0 @@
-import{_ as l,o as c,c as e,ai as a}from"./chunks/framework.D4BTmSeM.js";const s=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"_sidebar.md","filePath":"_sidebar.md"}'),i={name:"_sidebar.md"};function r(o,h,t,_,m,f){return c(),e("div",null,[...h[0]||(h[0]=[a("",1)])])}const D=l(i,[["render",r]]);export{s as __pageData,D as default};
