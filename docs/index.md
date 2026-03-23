@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /README
+      link: /ch1/ch1
     - theme: alt
       text: 项目说明
       link: /README
