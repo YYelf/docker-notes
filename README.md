@@ -2,10 +2,9 @@
 
 ## 项目来源说明
 
-:::warning 本项目说明
-本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。  
-为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
-:::
+> [!info] 本项目说明
+> 本项目基于 [datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes) 的内容进行了整理与二次包装。  
+> 为了方便在线浏览和文档管理，使用 **VitePress** 构建了本项目的文档页面。
 
   
 在线文档访问地址：  
