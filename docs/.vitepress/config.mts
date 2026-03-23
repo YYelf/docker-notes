@@ -84,7 +84,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/datawhalechina/docker-notes' }
+      { icon: 'github', link: 'https://github.com/YYelf/docker-notes' }
     ]
   }
 })

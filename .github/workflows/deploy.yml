@@ -1,0 +1,31 @@
+name: Deploy VitePress Docs
+
+on:
+  push:
+    branches:
+      - main  # 每次 push 到 main 分支时触发
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 拉取仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 安装 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm ci
+
+      # 构建并部署 VitePress
+      - name: Build and Deploy Docs
+        run: npm run docs:deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
